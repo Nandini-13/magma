@@ -6,8 +6,9 @@ html{
     border-bottom: 1px solid rgb(204, 22, 22);
     box-shadow: 1px 1px 15px 1px rgb(179, 178, 178);
     position: fixed;
+    background-color: white;
+    z-index: 10;
     width: 100%;
-    margin-right: 15%;
 }
 #logo {
     width: 45vh;
@@ -34,3 +35,100 @@ a:hover {
 .nav-link:hover{
     color: black !important;
 }
+
+#home{
+    background-image: url(two.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    border-bottom: 1px solid rgb(196, 60, 36);
+}
+
+/* slide */
+ 
+slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+   }
+   
+   slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+   }
+   
+   slide:nth-child(1){
+    animation-delay: -1s;
+    background-image: url(one.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   }
+   
+   slide:nth-child(2){
+    left: 100%;
+    animation-delay: 2s;
+    background-image: url(two.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   }
+   
+   slide:nth-child(3){
+    left: 100%;
+    animation-delay: 5s;
+    background-image: url(three.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   }
+   
+   slide:nth-child(4){
+    left: 100%;
+    animation-delay: 8s;
+    background-image: url(four.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   }
+   
+   slide p {
+    font-family: 'Lato', sans-serif;;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+   }
+   
+   @keyframes slide {
+    0% { left: 100%; width: 100%; }
+    5% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; width: 100%; }
+    30.0001% { left: -100%; width: 0%; }
+    100% { left: 100%; width: 0%; }
+   }
+   
+   #know {
+       background-color: rgba(0, 0, 0, 0.027);
+       padding: 1%;
+       font-size: 30%;
+       border-radius: 10%;
+       color: white;
+       border: 2px solid white;
+   }
