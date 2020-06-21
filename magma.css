@@ -20,23 +20,27 @@ a:hover {
     text-decoration: none !important;
 }
 .nav-item {
-    margin-right: 9%;
+    margin-right: 4%;
+
 }
 .nav-link{
     color: rgb(133, 0, 0) !important;
-    font-family: 'Lato', sans-serif !important;
-    padding: 0 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    padding: 3%;
     height: min-content !important;
     width: max-content !important;
 }
 #tags{
     margin-right: 10%;
 }
+h3{
+    font-family: 'Orbitron', sans-serif;
+}
 .nav-link:hover{
     color: black !important;
 }
 
-#home{
+#above{
     background-image: url(two.jpg);
     height: 100vh;
     background-size: cover;
@@ -45,7 +49,11 @@ a:hover {
 .product {
     display: flex;
     flex-direction: row;
-    padding: 10%;
+    height: 92vh;
+    padding-left: 10%;
+    padding-right: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     border-bottom: 1px solid rgb(196, 60, 36);
 }
 
@@ -106,7 +114,7 @@ slider {
    }
    
    slide p {
-    font-family: 'Lato', sans-serif;;
+    font-family: 'Orbitron', sans-serif;
     font-size: 70px;
     text-align: center;
     display: inline-block;
@@ -124,11 +132,27 @@ slider {
     100% { left: 100%; width: 0%; }
    }
    
-   #know {
-       background-color: rgba(0, 0, 0, 0.027);
-       padding: 1%;
-       font-size: 30%;
-       border-radius: 10%;
+   #disclaim {
+       padding-left: 10%;
+       padding-right: 10%;
+       padding-bottom: 5%;
+       padding-top: 5%;
+       background-color: rgb(187, 25, 25);
        color: white;
-       border: 2px solid white;
+   }
+
+   #my-tabs {
+       background-color: white;
+       margin-left: 10%;
+   }
+   td {
+    border: 1.5px solid #bdbdbd;
+    text-align: center;
+    padding: 8px;
+   }
+   table{
+       width: 75%;
+   }
+   #variety {
+       margin-right: 10%;
    }
